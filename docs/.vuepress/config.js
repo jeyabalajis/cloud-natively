@@ -1,3 +1,4 @@
 module.exports = {
-    base: "/cloud-natively/"
+    base: "/cloud-natively/",
+    theme: 'yuu'
 }
