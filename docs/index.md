@@ -14,5 +14,5 @@ Cloud Native applications allow your organization to ship faster, reduce risk, a
 
 Under the hood, a Cloud Native architecture is supported by these key architecture patterns and processes.
 
-![Cloud Native Components](../images/cloud_native_composition.png)
+![Cloud Native Components](./images/cloud_native_composition.png)
 
