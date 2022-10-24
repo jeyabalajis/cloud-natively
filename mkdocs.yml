@@ -1,4 +1,4 @@
-site_name: Cloud Natively - A comprehensive guide to building Cloud Native applications
+site_name: Cloud Natively
 repo_url: https://github.com/jeyabalajis/cloud-natively.git
 theme:
   name: 'material'
