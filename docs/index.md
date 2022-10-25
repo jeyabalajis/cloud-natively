@@ -20,7 +20,7 @@ Under the hood, a Cloud Native architecture is supported by these key architectu
 
 - [Containers](#containers)
 - [Microservices](#microservices)
-- [Continous Delivery](#continous-delivery)
+- [Continuous Delivery](#continuous-delivery)
 - [DevOps](#devops)
 
 ![Cloud Native Components](./images/cloud_native_composition.png)
@@ -124,7 +124,7 @@ The following patterns are available for you to divide a domain into bounded con
 - It also enables an organization to evolve its technology stack.
 
 
-## Continous Delivery
+## Continuous Delivery
 
 > Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time.
 
@@ -152,9 +152,9 @@ The key steps to accomplishing Continuous Delivery are as follows:
 - **Reduced Deployment Risk**: Since software is deployed in increments, you control what's changing and it is easier to rollback if needed. We delver deeper into safe deployment mechanisms (such as blue/green) in the further chapters.
 - **User Feedback**: This is the biggest benefit of continuous delivery. Working software is presented in front of real users more frequently, which in turns allows you to gather critical feedback and perform course correction to your roadmap.
 
-### Implementing Continous Delivery
+### Implementing Continuous Delivery
 
-The following practices helps your team to implement continous delivery and accomplish higher throughput and lower risk releases:
+The following practices helps your team to implement continuous delivery and accomplish higher throughput and lower risk releases:
 
 - **Test Automation**: The use of comprehensive automated test suites primarily created and maintained by developers. _Effective test suites are reliable — that is, tests find real failures and only pass releasable code_.
 - **Code Maintainability**: Make it easy for developers to change code maintained by others, to reuse other people's code, and to add, upgrade, and migrate to new versions of dependencies without breaking their code.
@@ -167,7 +167,7 @@ The following practices helps your team to implement continous delivery and acco
 
 > The patterns and practices that enable faster, more reliable releases to deliver value to the business are collectively known as DevOps.
 
-Unlike the previous constituents (Containers, Microservices & Continuous Delivery), DevOps is not just about Technology. It is a combination of People, Processes & Technology and it is a Continuous Journey, rather than a destination.  
+Unlike the previous constituents (Containers, Microservices & Continuous Delivery), DevOps is not just about Technology. It is a combination of People, Processes & Technology and it is a **Continuous Journey**, rather than a destination.  
 
 If you are operating with the highest levels of DevOps maturity, you reap the following benefits:
 
