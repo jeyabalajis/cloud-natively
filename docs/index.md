@@ -20,7 +20,7 @@ Under the hood, a Cloud Native architecture is supported by these key architectu
 
 - [Containers](#containers)
 - [Microservices](#microservices)
-- [Continous Delivery](#continous-delivery)
+- [Continuous Delivery](#continuous-delivery)
 - [DevOps](#devops)
 
 ![Cloud Native Components](./images/cloud_native_composition.png)
@@ -124,7 +124,7 @@ The following patterns are available for you to divide a domain into bounded con
 - It also enables an organization to evolve its technology stack.
 
 
-## Continous Delivery
+## Continuous Delivery
 
 > Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time.
 
