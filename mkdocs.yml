@@ -1,8 +1,6 @@
 site_name: Cloud Natively
 repo_url: https://github.com/jeyabalajis/cloud-natively.git
-theme:
-  name: 'material'
-  logo: 'images/logo.png'
+theme: readthedocs
 use_directory_urls: false
 markdown_extensions:
   - admonition
