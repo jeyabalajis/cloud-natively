@@ -210,6 +210,29 @@ Organizations actively and regularly seek customer feedback and incorporate it i
 
 Development teams have the authority to create and change specifications as part of the development process without requiring approval.
 
+
+### DevOps Maturity Assessment
+
+The following are some of the key metrics you can use to track the current DevOps maturity of your organization:
+
+#### Deployment Frequency 
+
+For the primary application or service you work on, how often does your organization deploy code to production or release it to end users?
+
+#### Lead Time for Changes
+
+For the primary application or service you work on, what is your lead time for changes (i.e., how long does it take to go from code committed to code successfully running in production)?
+
+#### Mean Time to Restore (MTTR)
+
+For the primary application or service you work on, how long does it generally take to restore service when a service incident or a defect that impacts users occurs (e.g., unplanned outage or service impairment)?
+
+
+#### Change Fail Rate 
+
+For the primary application or service you work on, what percentage of changes to production or released to users result in degraded service (e.g., lead to service impairment or service outage) and subsequently require remediation (e.g., require a hotfix, rollback, fix forward, patch)?
+
+
 ## References
 
 - [Cloud Native - Definition](https://learn.microsoft.com/en-us/dotnet/architecture/cloud-native/definition)
@@ -219,3 +242,4 @@ Development teams have the authority to create and change specifications as part
 - [Microservices Architecture & Patterns](https://microservices.io/index.html)
 - [The Five Principles of Lean](https://theleanway.net/The-Five-Principles-of-Lean)
 - [DevOps Research & Assessment](https://www.devops-research.com/research.html)
+- [Continuous Delivery is not just a technical activity](https://www.thoughtworks.com/en-in/insights/blog/continuous-delivery/continuous-delivery-not-just-a-technical-activity)
