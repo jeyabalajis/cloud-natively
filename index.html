@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Cloud Natively</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Home";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> Cloud Natively
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="index.html">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-cloud-native">What is Cloud Native?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#containers">Containers</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#why-containers">Why Containers?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#container-orchestration">Container Orchestration</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#microservices">Microservices</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#bounded-context">Bounded Context</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#key-characteristics-of-microservices">Key Characteristics of Microservices</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#why-microservices">Why Microservices</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#continuous-delivery">Continuous Delivery</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#why-continuous-delivery">Why Continuous Delivery</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#implementing-continuous-delivery">Implementing Continuous Delivery</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#devops">DevOps</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#why-devops">Why DevOps</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#calms-framework">CALMS Framework</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lean-product-development">Lean Product Development</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#working-in-small-batches">Working in small batches</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#visibility-of-work-in-the-value-stream">Visibility of work in the value stream</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#customer-feedback">Customer feedback</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#team-experimentation">Team experimentation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#devops-maturity-assessment">DevOps Maturity Assessment</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#deployment-frequency">Deployment Frequency</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#lead-time-for-changes">Lead Time for Changes</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mean-time-to-restore-mttr">Mean Time to Restore (MTTR)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#change-fail-rate">Change Fail Rate</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#references">References</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Continuous Delivery</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="continuous_delivery/basics.html">Basics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="continuous_delivery/continuous_integration.html">Continuous Integration</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Cloud Natively</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/jeyabalajis/cloud-natively.git/edit/master/docs/index.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="cloud-natively">Cloud Natively</h1>
+<p>Hello there! Welcome to this portal. </p>
+<p>The intent of this portal is to provide you with a comprehensive overview of what a cloud native application is, it's benefits on software delivery and how you can approach building cloud native applications.</p>
+<p>We start with a high level overview of what a <em>Cloud Native</em> software application is, and then delve deeper into the various constituents. Hope you enjoy this guide!</p>
+<blockquote>
+<p>Cloud Natively - A comprehensive overview of Cloud Native applications</p>
+</blockquote>
+<h2 id="what-is-cloud-native">What is Cloud Native?</h2>
+<p>Cloud Native applications allow your organization to ship faster, reduce risk, and grow your business.</p>
+<blockquote>
+<p>Cloud native is an approach to building and running applications that exploits the advantages of the cloud computing delivery model. When companies build and operate applications using a cloud native architecture, they bring new ideas to market faster and respond sooner to customer demands.</p>
+<p>Cloud Native is the answer to the software industry’s relentless search in the current decade for a set of tools and practices that makes your software easily deployable, modular, maintainable, robust, reliable, scalable, portable and observable — all at once.</p>
+</blockquote>
+<p>Under the hood, a Cloud Native architecture is supported by these key architecture patterns and processes.</p>
+<ul>
+<li><a href="#containers">Containers</a></li>
+<li><a href="#microservices">Microservices</a></li>
+<li><a href="#continuous-delivery">Continuous Delivery</a></li>
+<li><a href="#devops">DevOps</a></li>
+</ul>
+<p><img alt="Cloud Native Components" src="images/cloud_native_composition.png" /></p>
+<h2 id="containers">Containers</h2>
+<blockquote>
+<p>Containers are a great enabler of Cloud Native software.</p>
+</blockquote>
+<p>Containerization is the first step towards making your software portable to cloud &amp; scalable thereof. </p>
+<ul>
+<li>Containerization is normally done with <a href="https://www.docker.com/">Docker</a> containers, but there are alternatives like <a href="https://www.redhat.com/en/topics/containers/what-is-rkt">rkt</a> too.</li>
+<li>Any size application and dependencies can be containerized</li>
+<li>However, you should aspire towards composing a set of <a href="https://www.baeldung.com/cs/cohesion-vs-coupling"><em>highly cohesive</em></a> functionality into a single container.</li>
+</ul>
+<p>Containerizing a service is simple and straightforward. </p>
+<ol>
+<li>The code, its dependencies, and runtime are packaged into a binary called a container image. </li>
+<li>Images are stored in a container registry, which acts as a repository or library for images. </li>
+<li>A registry can be located on your development computer, in your data center, or in a public cloud. </li>
+<li>Docker itself maintains a public registry via Docker Hub.</li>
+</ol>
+<p><img alt="Containerization Workflow" src="images/docker_container_workflow.png" /></p>
+<blockquote>
+<p>While several container vendors exist, Docker has captured the lion's share of the market. The company has been driving the software container movement. It has become the de facto standard for packaging, deploying, and running cloud-native applications.</p>
+</blockquote>
+<h3 id="why-containers">Why Containers?</h3>
+<ul>
+<li>Containers provide portability and guarantee consistency across environments.</li>
+<li>By encapsulating everything into a single package, you isolate the service (that provides a set of cohesive functionality) and its dependencies <em>from the underlying infrastructure</em>.</li>
+<li>Containerized workloads also eliminate the expense of pre-configuring each environment with frameworks, software libraries, and runtime engines. <em>You can deploy the container in any environment that hosts the Docker runtime engine</em>.</li>
+<li>By sharing the underlying operating system and host resources, <strong>a container has a much smaller footprint than a full virtual machine</strong>. The smaller size increases the density, or number of services, that a given host can run at one time.</li>
+</ul>
+<h3 id="container-orchestration">Container Orchestration</h3>
+<p>While tools such as Docker allow you to create container images and run them, you need additional abstractions to <em>manage</em> them (i.e. scale out or in based on demand, apply revisions based on new versions, expose containers as services to the outside world etc.)</p>
+<blockquote>
+<p>While several container orchestrators exist, <a href="https://kubernetes.io/docs/concepts/overview/">Kubernetes</a> has become the de facto standard for the cloud-native world. It's a portable, extensible, open-source platform for managing containerized workloads.</p>
+</blockquote>
+<p>Kubernetes is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.</p>
+<blockquote>
+<p>Kubernetes brings infrastructure-level concerns like load balancing, networking, storage, and compute into app configuration - this makes it hard to understand, but it is worth it.</p>
+</blockquote>
+<p>Kubernetes is a platform for running containers. This includes, but not limited to, the folowing capabilities:</p>
+<ul>
+<li>Start your containerized applications</li>
+<li>Roll out updates or revisions to software in a phased manner </li>
+<li>Maintain service levels</li>
+<li>Scale to meet demand</li>
+<li>Secure access</li>
+<li>Provide external storage for stateful apps</li>
+<li>Provide network traffic routing</li>
+</ul>
+<blockquote>
+<p><strong>The joy of working with Kubernetes is that it adds a layer of consistency on top of all your apps—old .NET and Java monoliths and new Node.js and Go microservices are all described, deployed, and managed in the same way.</strong></p>
+<p>All major cloud providers offer managed Kubernetes as a service, which allows you to deliver scalable containerized applications fast.</p>
+</blockquote>
+<h2 id="microservices">Microservices</h2>
+<blockquote>
+<p>Cloud-native systems embrace microservices, a popular architectural style for constructing modern applications.</p>
+</blockquote>
+<p>The term <em>Microservices</em> refers to an architectural approach based on multiple smaller, modular services. Each microservice has it's own codebase and is usually <em>owned and maintained</em> by a separate <a href="https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/two-pizza-teams.html"><em>small</em></a> team.</p>
+<p>A background in <a href="https://medium.com/ssense-tech/domain-driven-design-everything-you-always-wanted-to-know-about-it-but-were-afraid-to-ask-a85e7b74497a">Domain Driven Design</a> is essential to structure microservices.</p>
+<blockquote>
+<p>Domain Driven Design: “A specific sphere of activity or knowledge that defines a set of common requirements, terminology, and functionality on which the application logic works to solve a problem.”</p>
+</blockquote>
+<p>It focuses mainly on a business problem and how to strictly organize the logic that solves it. This approach was first described by Eric Evans in his book <a href="https://www.goodreads.com/book/show/179133.Domain_Driven_Design">Domain-Driven Design Tackling Complexity in the Heart of Software</a>.</p>
+<h3 id="bounded-context">Bounded Context</h3>
+<p>In Domain Driven Design, <em>Bounded Context</em> is a way to break the domain into multiple cohesive wholes, each of which have their own unified model both in concept and in code.</p>
+<p>For example, let us say you are building a software platform to offer Supply Chain Financing as a Service. Here <em>Supply Chain Financing</em> is the domain. Some of the bounded contexts could be as follows:</p>
+<ul>
+<li><strong>Origination</strong>: The process flow that on-boards a small business and provides them with a credit limit)</li>
+<li><strong>Financing</strong>: The process flow that starts with a small business submitting an invoice &amp; ends with the invoice being funded through credit limit consumption</li>
+<li><strong>Rewards</strong>: Gamified update of credit limits, based on the repayment behavior of the small business</li>
+</ul>
+<p>You can structure each of the above sub-domains as a set of microservices, each providing a cohesive set of functionality.</p>
+<p>The following patterns are available for you to divide a domain into bounded contexts:</p>
+<ul>
+<li><a href="https://microservices.io/patterns/decomposition/decompose-by-subdomain.html">Decompose by Sub-Domain</a></li>
+<li><a href="https://microservices.io/patterns/decomposition/decompose-by-business-capability.html">Decompose by Business Capability</a></li>
+</ul>
+<h3 id="key-characteristics-of-microservices">Key Characteristics of Microservices</h3>
+<ul>
+<li>Each service implements a specific business capability within a larger domain context.</li>
+<li>Each service is developed <em>autonomously</em> and can be <em>deployed and scaled independently</em>.</li>
+<li>Each service is self-contained encapsulating its own data storage technology, dependencies, and programming platform.</li>
+<li>The services are not aware of other services that live outside the <em>bounded context</em>. I.e. the services are <em>Loosely coupled</em>. </li>
+</ul>
+<blockquote>
+<p><strong>When you embark on your journey to build your software application as a set of microservices, always start with the domain and discover bounded contexts within your domain. This allows you to build your application as a set of cohesive and loosely coupled services.</strong> </p>
+<p>When you build microservices, embrace the philosophy of <a href="https://12factor.net/">Twelve Factor Apps</a></p>
+</blockquote>
+<h3 id="why-microservices">Why Microservices</h3>
+<ul>
+<li>The microservice architecture enables the rapid, frequent and reliable delivery of large, complex applications.</li>
+<li>It also enables an organization to evolve its technology stack.</li>
+</ul>
+<h2 id="continuous-delivery">Continuous Delivery</h2>
+<blockquote>
+<p>Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time.</p>
+</blockquote>
+<p>With Continuous Delivery
+- Software is checked-in, tested, packaged and deployed in multiple increments throughout the day.
+- You can perform push-button deployments of any version of the software to any environment on demand</p>
+<p>The key steps to accomplishing Continuous Delivery are as follows:</p>
+<ol>
+<li>Continuously Integrate the software developed by the development team</li>
+<li>Run automated tests on the integrated software</li>
+<li>Build a container image, tag/version appropriately and push into a container registry </li>
+<li>Deploy the software version from registry into an environment.</li>
+</ol>
+<blockquote>
+<p>Steps 1 &amp; 2 together is usually referred to as <a href="https://martinfowler.com/articles/continuousIntegration.html">Continous Integration</a>. Continuous Delivery builds on this, dealing with the final stages required for production deployment. </p>
+<p>Step 3 can either be automated (or) can be managed as a manual <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-commits/managing-tags"><em>release</em></a> through tags.</p>
+<p>Step 4 can either be done automatically (or) can be managed as a manual <a href="https://docs.github.com/en/rest/deployments"><em>deployment</em></a> step. Continuous Delivery just means that you are able to do frequent deployments but may choose not to do it, usually due to businesses preferring a slower rate of deployment.</p>
+</blockquote>
+<p><img alt="Continuous Delivery" src="images/continuous_delivery.png" /></p>
+<h3 id="why-continuous-delivery">Why Continuous Delivery</h3>
+<ul>
+<li><strong>Reduced Deployment Risk</strong>: Since software is deployed in increments, you control what's changing and it is easier to rollback if needed. We delver deeper into safe deployment mechanisms (such as blue/green) in the further chapters.</li>
+<li><strong>User Feedback</strong>: This is the biggest benefit of continuous delivery. Working software is presented in front of real users more frequently, which in turns allows you to gather critical feedback and perform course correction to your roadmap.</li>
+</ul>
+<h3 id="implementing-continuous-delivery">Implementing Continuous Delivery</h3>
+<p>The following practices helps your team to implement continuous delivery and accomplish higher throughput and lower risk releases:</p>
+<ul>
+<li><strong>Test Automation</strong>: The use of comprehensive automated test suites primarily created and maintained by developers. <em>Effective test suites are reliable — that is, tests find real failures and only pass releasable code</em>.</li>
+<li><strong>Code Maintainability</strong>: Make it easy for developers to change code maintained by others, to reuse other people's code, and to add, upgrade, and migrate to new versions of dependencies without breaking their code.</li>
+<li><strong>Continuous Integration</strong>: A development practice where code is regularly checked in, and each check-in triggers a set of quick tests to discover regressions, which developers fix immediately. The CI process creates <em>canonical builds and packages</em> that are ultimately deployed and released.</li>
+<li><strong>Continuous testing</strong>: Testing throughout the software delivery lifecycle rather than as a separate phase after dev complete.</li>
+<li><strong>A loosely coupled architecture</strong>: Architecture that lets teams test and deploy their applications on demand, without requiring orchestration with other services.</li>
+<li><strong>Deployment automation</strong>: The degree to which deployments are fully automated and do not require manual intervention.  </li>
+</ul>
+<h2 id="devops">DevOps</h2>
+<blockquote>
+<p>The patterns and practices that enable faster, more reliable releases to deliver value to the business are collectively known as DevOps.</p>
+</blockquote>
+<p>Unlike the previous constituents (Containers, Microservices &amp; Continuous Delivery), DevOps is not just about Technology. It is a combination of People, Processes &amp; Technology and it is a <strong>Continuous Journey</strong>, rather than a destination.  </p>
+<p>If you are operating with the highest levels of DevOps maturity, you reap the following benefits:</p>
+<ul>
+<li><strong>Increase the speed of your deployments</strong></li>
+<li><strong>Improve the stability of your software</strong></li>
+<li><strong>Build security in from the start</strong></li>
+</ul>
+<p>The capabilities that DevOps encompasses are well documented. See <a href="https://www.devops-research.com/research.html#capabilities">here</a> for a comprehensive take on DevOps.</p>
+<h3 id="why-devops">Why DevOps</h3>
+<ul>
+<li>Increased Collaboration and Trust</li>
+<li>Release Faster and work Smarter</li>
+<li>Accelerate Time-to-Resolution</li>
+<li>Better Manage unplanned work </li>
+</ul>
+<h3 id="calms-framework">CALMS Framework</h3>
+<p><a href="https://www.atlassian.com/devops/frameworks/calms-framework">CALMS</a> is a framework that assesses a company's ability to adopt DevOps processes, as well as a way of measuring success during a DevOps transformation. The acronym was coined by Jez Humble, co-author of “The DevOps Handbook,” and stands for <em>Culture</em>, <em>Automation</em>, <em>Lean Product Development</em>, <em>Measurement</em>, and <em>Sharing</em>.</p>
+<h3 id="lean-product-development">Lean Product Development</h3>
+<p>You can increase your software delivery performance, organizational performance, and decrease burnout by focusing on the following four capabilities:</p>
+<h4 id="working-in-small-batches">Working in small batches</h4>
+<p>Teams break products and features into small batches that can be completed in less than a week and released frequently, including the use of MVPs (minimum viable products).</p>
+<h4 id="visibility-of-work-in-the-value-stream">Visibility of work in the value stream</h4>
+<p>Teams understand the workflow from business to customers, and whether they have visibility into this flow, including the status of products and features.</p>
+<blockquote>
+<p>Mapping the value stream is a <a href="https://theleanway.net/The-Five-Principles-of-Lean">lean principle</a>. The goal of value stream mapping is to use the customer’s value as a reference point and identify all the activities that contribute to these values. Activities that do not add value to the end customer are considered waste.</p>
+</blockquote>
+<h4 id="customer-feedback">Customer feedback</h4>
+<p>Organizations actively and regularly seek customer feedback and incorporate it into their product design.</p>
+<h4 id="team-experimentation">Team experimentation</h4>
+<p>Development teams have the authority to create and change specifications as part of the development process without requiring approval.</p>
+<h3 id="devops-maturity-assessment">DevOps Maturity Assessment</h3>
+<p>The following are some of the key metrics you can use to track the current DevOps maturity of your organization:</p>
+<h4 id="deployment-frequency">Deployment Frequency</h4>
+<p>For the primary application or service you work on, how often does your organization deploy code to production or release it to end users?</p>
+<h4 id="lead-time-for-changes">Lead Time for Changes</h4>
+<p>For the primary application or service you work on, what is your lead time for changes (i.e., how long does it take to go from code committed to code successfully running in production)?</p>
+<h4 id="mean-time-to-restore-mttr">Mean Time to Restore (MTTR)</h4>
+<p>For the primary application or service you work on, how long does it generally take to restore service when a service incident or a defect that impacts users occurs (e.g., unplanned outage or service impairment)?</p>
+<h4 id="change-fail-rate">Change Fail Rate</h4>
+<p>For the primary application or service you work on, what percentage of changes to production or released to users result in degraded service (e.g., lead to service impairment or service outage) and subsequently require remediation (e.g., require a hotfix, rollback, fix forward, patch)?</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/architecture/cloud-native/definition">Cloud Native - Definition</a></li>
+<li><a href="https://learn.microsoft.com/en-us/dotnet/architecture/cloud-native/scale-applications">Scaling Cloud Native Apps</a></li>
+<li><a href="https://kubernetes.io/docs/concepts/overview/">Kubernetes Overview</a></li>
+<li><a href="https://tanzu.vmware.com/content/blog/beyond-the-twelve-factor-app">Beyond the Twelve Factor App</a></li>
+<li><a href="https://microservices.io/index.html">Microservices Architecture &amp; Patterns</a></li>
+<li><a href="https://theleanway.net/The-Five-Principles-of-Lean">The Five Principles of Lean</a></li>
+<li><a href="https://www.devops-research.com/research.html">DevOps Research &amp; Assessment</a></li>
+<li><a href="https://www.thoughtworks.com/en-in/insights/blog/continuous-delivery/continuous-delivery-not-just-a-technical-activity">Continuous Delivery is not just a technical activity</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="continuous_delivery/basics.html" class="btn btn-neutral float-right" title="Basics">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/jeyabalajis/cloud-natively.git" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+    
+      <span><a href="continuous_delivery/basics.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.4.1
+Build Date UTC : 2022-10-28 06:45:40.767200+00:00
+-->
