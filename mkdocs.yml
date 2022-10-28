@@ -1,8 +1,6 @@
 site_name: Cloud Natively
 repo_url: https://github.com/jeyabalajis/cloud-natively.git
-theme:
-  name: 'material'
-  logo: 'images/logo.png'
+theme: readthedocs
 use_directory_urls: false
 markdown_extensions:
   - admonition
@@ -15,3 +13,6 @@ extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 nav:
   - Home: index.md
+  - Continuous Delivery:
+    - Basics: continuous_delivery/basics.md
+    - Continuous Integration: continuous_delivery/continuous_integration.md
