@@ -16,5 +16,5 @@ extra_javascript:
 nav:
   - Home: index.md
   - Continuous Delivery:
-    - basics: continuous_delivery/basics.md
-    - Continuous Integration: continuous_delivery/continuous_integration.md
+      - Basics: continuous_delivery/basics.md
+      - Continuous Integration: continuous_delivery/continuous_integration.md
