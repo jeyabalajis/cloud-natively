@@ -13,3 +13,6 @@ extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 nav:
   - Home: index.md
+  - Continuous Delivery:
+    - basics: continuous_delivery/basics.md
+    - Continuous Integration: continuous_delivery/continuous_integration.md
