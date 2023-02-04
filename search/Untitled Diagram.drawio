@@ -1,1 +1,60 @@
-<mxfile host="app.diagrams.net" modified="2023-02-04T06:50:26.504Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.8.16" etag="3vBuU3hX0jIdj0N5E5DT" type="github"><diagram name="Page-1" id="1Fr8l81DMcPUd_FYbnNW">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-04T06:59:13.979Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="Qob4kMEGL1h8TCJtPRd5" version="20.8.16" type="github">
+  <diagram name="Page-1" id="1Fr8l81DMcPUd_FYbnNW">
+    <mxGraphModel dx="1235" dy="684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="160" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="t5zuFU_oRF0lToCWg5d9-1" target="t5zuFU_oRF0lToCWg5d9-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-1" value="MSK Cluster" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.managed_streaming_for_kafka;" vertex="1" parent="1">
+          <mxGeometry x="70" y="187.5" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="t5zuFU_oRF0lToCWg5d9-2" target="t5zuFU_oRF0lToCWg5d9-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-2" value="MSK Connect" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.msk_amazon_msk_connect;" vertex="1" parent="1">
+          <mxGeometry x="230" y="187.5" width="78" height="77" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="t5zuFU_oRF0lToCWg5d9-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="508" y="227" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-3" value="Team S3 Bucket" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="180" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.467;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="t5zuFU_oRF0lToCWg5d9-4" target="t5zuFU_oRF0lToCWg5d9-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-4" value="Athena Connector" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.athena;" vertex="1" parent="1">
+          <mxGeometry x="390" y="390" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-5" value="Glue Crawler" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.glue_crawlers;" vertex="1" parent="1">
+          <mxGeometry x="550" y="195" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-6" value="Glue Data Catalog" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.glue_data_catalog;" vertex="1" parent="1">
+          <mxGeometry x="670" y="195" width="72" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="t5zuFU_oRF0lToCWg5d9-12" target="t5zuFU_oRF0lToCWg5d9-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-12" value="LYNX" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="69" y="30" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="t5zuFU_oRF0lToCWg5d9-14" target="t5zuFU_oRF0lToCWg5d9-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-14" value="Tableau Dashboard" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/ionicons-fill-vol-2/512/logo-tableau-128.png" vertex="1" parent="1">
+          <mxGeometry x="365" y="540" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="t5zuFU_oRF0lToCWg5d9-18" value="&lt;h1&gt;Solution Description&lt;/h1&gt;&lt;p&gt;As Farmer Trades are entered into Lynx, through CDC, they are streamed into a Kafka Topic and sinked into Team S3 bucket.&lt;/p&gt;&lt;p&gt;This data is cataloged through Glue Data Catalog and used by Athena Connector.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Anew new data that is landed into S3 is discovered by Glue Crawler and cataloged automatically.&lt;/p&gt;&lt;p&gt;A Tableau dashboard can then connect to this data set and can receive near real-time updates of Farmer Selling Data from Lynx.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="360" width="310" height="220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
